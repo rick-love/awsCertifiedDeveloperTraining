@@ -6,15 +6,34 @@ $danger-color: rgba(235, 10, 10, 1);
   margin: 1rem;
   padding: 1rem;
   ul {
-      display: block;
-      width: 80%;
-      margin-left: 5%;
+    display: block;
+    width: 80%;
+    margin-bottom: 1rem;
     li {
-      list-style: none;
+      margin-left: 1rem;
       padding: 0.3rem;
-
-      &:nth-child(odd) {background-color: $secondary-color;}
     }
+    ol {
+      li {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+}
 
+// Table Formatting
+.table {
+  width: 100%;
+  padding: 0.5rem;
+  td{
+    padding: 0.5rem 1rem;
+  }
+  tr:nth-child(even) {
+    background-color: $secondary-color;
+  }
+  thead > tr > td {
+    color: $primary-color;
+    text-align: center;
+    font-size: 2rem;
   }
 }

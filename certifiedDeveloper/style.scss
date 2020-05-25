@@ -9,8 +9,3 @@
 h1 {
     color: $danger-color; text-align: center;
 }
-
-// Table Formatting
-tr:nth-child(even) {
-    background-color: $secondary-color;
-  }
